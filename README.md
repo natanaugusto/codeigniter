@@ -1,4 +1,4 @@
-codeigniter
+CodeIgniter
 ===========
 
-Just CodeIgniter core to use with composer
+Only the CodeIgniter's core to be used with the composer
