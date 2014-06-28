@@ -1,0 +1,11 @@
+{
+	"name": "natanaugusto/codeigniter",
+	"description": "Only the CodeIgniter's core to be used with the composer",
+	"keywords": ["codeigniter", "code", "igniter", "framework"],
+	"homepage": "http://ellislab.com/codeigniter",
+	"type": "library",
+	"require": {
+		"php": ">=5.3.2"
+	}
+}
+
