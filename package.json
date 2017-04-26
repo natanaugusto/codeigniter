@@ -1,0 +1,30 @@
+{
+  "name": "natanaugusto-codeigniter",
+  "authors": [
+    "Natan Augusto <natanaugusto@gmail.com>"
+  ],
+  "description": "Just a scratch to create a CodeIgniter projects",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "directory": "application/assets/thid_party",
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-route": "~1.4.8",
+    "angularjs-scope.safeapply": "*",
+    "angular-mocks": "~1.4.8"
+  },
+  "resolutions": {
+    "angular": "~1.4.8"
+  },
+  "devDependencies": {}
+}

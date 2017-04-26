@@ -1,0 +1,30 @@
+{
+  "name": "natanaugusto/codeigniter",
+  "authors": [
+    "Natan Augusto <natanaugusto@gmail.com>"
+  ],
+  "description": "Just a scratch to CodeIgniter projects",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "directory": "application/assets/third_party",
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-route": "~1.4.8",
+    "bootstrap": "^3.3.7"
+  },
+  "resolutions": {
+    "angular": "~1.4.8",
+    "pouchdb": "~5.1.0"
+  },
+  "devDependencies": {}
+}
