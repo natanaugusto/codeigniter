@@ -1,3 +1,9 @@
 node_modules
 bower_components
+vendor
+
 application/assets/third_party
+
+*.swp
+*.swo
+*.lock

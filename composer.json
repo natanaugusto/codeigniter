@@ -1,15 +1,12 @@
 {
-	"description": "The CodeIgniter framework",
-	"name": "codeigniter/framework",
+	"description": "Base para CodeIgniter framework",
+	"name": "natanaugusto/codeigniter",
 	"type": "project",
-	"homepage": "https://codeigniter.com",
 	"license": "MIT",
-	"support": {
-		"forum": "http://forum.codeigniter.com/",
-		"wiki": "https://github.com/bcit-ci/CodeIgniter/wiki",
-		"irc": "irc://irc.freenode.net/codeigniter",
-		"source": "https://github.com/bcit-ci/CodeIgniter"
-	},
+  "author": {
+    "name": "Natan Augusto",
+    "email": "natanaugusto@gmail.com"
+  },
 	"require": {
 		"php": ">=5.2.4"
 	},
