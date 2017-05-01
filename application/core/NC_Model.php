@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * relatórios do sistema
  * @author Natan Augusto <natanaugusto@gmail.com>
  */
-class VL_Model extends CI_Model {
+class NC_Model extends CI_Model {
 	/**
 	 * Tabela ou view que deverá interagir com o Model
 	 * @var string
@@ -14,16 +14,16 @@ class VL_Model extends CI_Model {
 	/**
 	 * Colunas a serem trazidas do banco de dados
 	 * Exemplo 1: array(
-	 *  'Status',
-	 *  'Date',
+	 *  'status',
+	 *  'date',
 	 * )
 	 * Exemplo 2: array(
 	 *  'Status',
-	 *  'Date',
-	 *  'DataCadastro' => 'Data de Cadastro'
+	 *  'date',
+	 *  'data_cadastro' => 'Data de Cadastro'
 	 * )
 	 * Exemplo 3: array(
-	 * 	'Campo' => array(
+	 * 	'campo' => array(
 	 * 	  'mask' => 'command(:value:)',
 	 * 	  'label' => 'O campo',
 	 * 	)
@@ -53,7 +53,7 @@ class VL_Model extends CI_Model {
 	 * Recupera os resultados de uma determinada consulta
 	 * @param  $paramname descriptioninteger $page   Página corrente
 	 * @param  integer $limit  Limite de itens por página
-	 * @param  array $columns @see VL_Model::$columns
+	 * @param  array $columns @see NC_Model::$columns
 	 * @param  array $wheres Colunas e valores para ser definido os Wheres
 	 * @return array Resultados da consulta
 	 */
@@ -77,7 +77,7 @@ class VL_Model extends CI_Model {
 	/**
 	 * Função para pegar um registro unico baseado no ID do registro
 	 * @param mixed $ID Id do registro
-	 * @param mixed $columns Colunas a serem trazidas @see VL_Model::getColumnsNames
+	 * @param mixed $columns Colunas a serem trazidas @see NC_Model::getColumnsNames
 	 * @param mixed $columnID Coluna que representa a PK
 	 * @return array Array com os campos do registro
 	 */
@@ -236,17 +236,6 @@ class VL_Model extends CI_Model {
 		}
 
 		return $result;
-	}
-	/**
-	 * Valida telefone
-	 * @param string|integer Telefone a ser validado
-	 * @return boolean
-	 */
-	public function validateTelefone($telefone) {
-		if(preg_match('/([\(]?[0-9]{2}[\)]?[ ]?[9]?[0-9]{4}[-]?[0-9]{4})/', $telefone))
-			return TRUE;
-		else
-			return FALSE;
 	}
 	/**
 	 * Recupera uma propriedade do objeto
